@@ -1,0 +1,31 @@
+[17:38:01] [main/INFO]: Writing debug log file accesstransform.log
+[17:38:01] [main/INFO]: Access Transformer processor running version 8.2.0
+[17:38:01] [main/INFO]: Command line arguments [--inJar, C:\Users\manpa\.gradle\caches\forge_gradle\minecraft_user_repo\net\minecraftforge\forge\1.19.2-43.4.4\forge-1.19.2-43.4.4-injected.jar, --outJar, C:\Users\manpa\.gradle\caches\forge_gradle\minecraft_user_repo\net\minecraftforge\forge\1.19.2-43.4.4_mapped_official_1.19.2\forge-1.19.2-43.4.4_mapped_official_1.19.2.jar, --logFile, accesstransform.log, --atFile, D:\Proyectos\LocksReforked\build\_atJar_6\parent_at.cfg]
+[17:38:01] [main/INFO]: Reading from C:\Users\manpa\.gradle\caches\forge_gradle\minecraft_user_repo\net\minecraftforge\forge\1.19.2-43.4.4\forge-1.19.2-43.4.4-injected.jar
+[17:38:01] [main/INFO]: Writing to C:\Users\manpa\.gradle\caches\forge_gradle\minecraft_user_repo\net\minecraftforge\forge\1.19.2-43.4.4_mapped_official_1.19.2\forge-1.19.2-43.4.4_mapped_official_1.19.2.jar
+[17:38:01] [main/INFO]: Transformer file D:\Proyectos\LocksReforked\build\_atJar_6\parent_at.cfg
+[17:38:01] [main/WARN]: Found existing output jar C:\Users\manpa\.gradle\caches\forge_gradle\minecraft_user_repo\net\minecraftforge\forge\1.19.2-43.4.4_mapped_official_1.19.2\forge-1.19.2-43.4.4_mapped_official_1.19.2.jar, overwriting
+[17:38:01] [main/ERROR]: Deleting existing out JAR
+java.nio.file.FileSystemException: C:\Users\manpa\.gradle\caches\forge_gradle\minecraft_user_repo\net\minecraftforge\forge\1.19.2-43.4.4_mapped_official_1.19.2\forge-1.19.2-43.4.4_mapped_official_1.19.2.jar: The process cannot access the file because it is being used by another process
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92) ~[?:?]
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103) ~[?:?]
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108) ~[?:?]
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:275) ~[?:?]
+	at sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:110) ~[?:?]
+	at java.nio.file.Files.deleteIfExists(Files.java:1191) ~[?:?]
+	at net.minecraftforge.accesstransformer.TransformerProcessor.main(TransformerProcessor.java:81) ~[accesstransformers-8.2.0-fatjar.jar:8.2.0]
+[17:38:01] [main/DEBUG]: Loading access transformer parent_at.cfg from path D:\Proyectos\LocksReforked\build\_atJar_6\parent_at.cfg
+[17:38:01] [main/DEBUG]: Loaded access transformer parent_at.cfg from path D:\Proyectos\LocksReforked\build\_atJar_6\parent_at.cfg
+[17:38:01] [main/DEBUG]: Loaded access transformer file D:\Proyectos\LocksReforked\build\_atJar_6\parent_at.cfg
+[17:38:01] [main/ERROR]: Writing JAR
+java.util.zip.ZipException: zip END header not found
+	at jdk.nio.zipfs.ZipFileSystem.findEND(ZipFileSystem.java:1320) ~[jdk.zipfs:?]
+	at jdk.nio.zipfs.ZipFileSystem.initCEN(ZipFileSystem.java:1534) ~[jdk.zipfs:?]
+	at jdk.nio.zipfs.ZipFileSystem.<init>(ZipFileSystem.java:179) ~[jdk.zipfs:?]
+	at jdk.nio.zipfs.ZipFileSystemProvider.getZipFileSystem(ZipFileSystemProvider.java:125) ~[jdk.zipfs:?]
+	at jdk.nio.zipfs.ZipFileSystemProvider.newFileSystem(ZipFileSystemProvider.java:106) ~[jdk.zipfs:?]
+	at java.nio.file.FileSystems.newFileSystem(FileSystems.java:339) ~[?:?]
+	at java.nio.file.FileSystems.newFileSystem(FileSystems.java:288) ~[?:?]
+	at net.minecraftforge.accesstransformer.TransformerProcessor.processJar(TransformerProcessor.java:102) ~[accesstransformers-8.2.0-fatjar.jar:8.2.0]
+	at net.minecraftforge.accesstransformer.TransformerProcessor.main(TransformerProcessor.java:85) ~[accesstransformers-8.2.0-fatjar.jar:8.2.0]
+[17:38:01] [main/INFO]: JAR transformation complete C:\Users\manpa\.gradle\caches\forge_gradle\minecraft_user_repo\net\minecraftforge\forge\1.19.2-43.4.4_mapped_official_1.19.2\forge-1.19.2-43.4.4_mapped_official_1.19.2.jar
